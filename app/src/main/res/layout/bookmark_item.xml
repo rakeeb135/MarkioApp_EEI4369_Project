@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#1F1F1F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewBookmarkThumbnail"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_agenda"
+            android:background="#333333"
+            android:contentDescription="Bookmark Thumbnail"
+            android:layout_marginEnd="16dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewBookmarkTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bookmark Title"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/textViewBookmarkNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Some notes about the bookmark."
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/textViewBookmarkLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="https://example.com/link"
+                android:textColor="#BB86FC"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewBookmarkLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location: 123 Main St, City"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewBookmarkTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#tag1 #tag2 #longtagname"
+                android:textColor="#03DAC5"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textViewBookmarkTimestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saved: Jan 01, 2024 10:30"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10sp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

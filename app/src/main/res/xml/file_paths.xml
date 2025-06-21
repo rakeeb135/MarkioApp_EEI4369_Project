@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Defines a path for app-specific external files in the Pictures directory -->
+    <!-- The 'path' attribute defines the subdirectory relative to the base path -->
+    <!-- 'name' is an arbitrary name for this path -->
+    <external-path name="my_images" path="Android/data/com.eei4369.markio/files/Pictures" />
+    <!-- IMPORTANT: The 'path' here should precisely match getExternalFilesDir(Environment.DIRECTORY_PICTURES) for your app's package -->
+</paths>
