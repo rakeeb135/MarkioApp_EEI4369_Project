@@ -17,6 +17,6 @@ public final class BookmarkContract {
         public static final String COLUMN_NAME_LINK_URL = "link_url";
         public static final String COLUMN_NAME_GEOGRAPHIC_LOCATION = "geographic_location";
         public static final String COLUMN_NAME_TIMESTAMP = "timestamp";
-        public static final String COLUMN_NAME_TAGS = "tags"; // New column for tags
+        public static final String COLUMN_NAME_TAGS = "tags";
     }
 }

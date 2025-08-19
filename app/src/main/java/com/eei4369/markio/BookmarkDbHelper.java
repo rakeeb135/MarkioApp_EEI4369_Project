@@ -22,7 +22,7 @@ public class BookmarkDbHelper extends SQLiteOpenHelper {
                     BookmarkEntry.COLUMN_NAME_LINK_URL + " TEXT," +
                     BookmarkEntry.COLUMN_NAME_GEOGRAPHIC_LOCATION + " TEXT," +
                     BookmarkEntry.COLUMN_NAME_TIMESTAMP + " INTEGER," +
-                    BookmarkEntry.COLUMN_NAME_TAGS + " TEXT DEFAULT ''" + // Added new column with default empty string
+                    BookmarkEntry.COLUMN_NAME_TAGS + " TEXT DEFAULT ''" +
                     ")";
 
     // SQL statement to delete the bookmarks table.

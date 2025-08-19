@@ -13,7 +13,7 @@ public class Bookmark {
     private long timestamp; // When created/last updated
     private String tags; // Comma-separated tags
 
-    // Constructor for new bookmarks (no ID yet)
+    // Constructor for new bookmarks
     public Bookmark(String title, String notes, String contentType, String contentUri, String linkUrl, String geographicLocation, String readableAddress, long timestamp, String tags) {
         this.title = title;
         this.notes = notes;
@@ -52,7 +52,7 @@ public class Bookmark {
     public long getTimestamp() { return timestamp; }
     public String getTags() { return tags; }
 
-    // --- Setters (if needed) ---
+    // --- Setters ---
     public void setId(long id) { this.id = id; }
     public void setTitle(String title) { this.title = title; }
     public void setNotes(String notes) { this.notes = notes; }
