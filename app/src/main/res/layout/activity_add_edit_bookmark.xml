@@ -33,7 +33,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Title Input -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -51,7 +50,6 @@
                     android:inputType="textCapSentences" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Notes Input -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +70,6 @@
                     android:maxLines="5" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Tags Input -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -91,7 +88,6 @@
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Content Attachment Buttons -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -122,7 +118,6 @@
                     android:textColor="@color/white"/>
             </LinearLayout>
 
-            <!-- Content Preview (Image/File/Video/Audio) -->
             <ImageView
                 android:id="@+id/imageViewContentPreview"
                 android:layout_width="match_parent"
@@ -135,7 +130,6 @@
                 android:visibility="gone"
                 android:src="@android:drawable/ic_menu_gallery"/>
 
-            <!-- Link URL Input -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayoutLinkUrl"
                 android:layout_width="match_parent"
@@ -154,7 +148,6 @@
                     android:inputType="textUri" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Location Section -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -192,7 +185,6 @@
 
             </LinearLayout>
 
-            <!-- Location Map Preview (Static Map) -->
             <ImageView
                 android:id="@+id/imageViewLocationMapPreview"
                 android:layout_width="match_parent"
@@ -205,7 +197,6 @@
                 android:src="@drawable/ic_location_on_map" />
 
 
-            <!-- Action Buttons (Save, Delete, Cancel) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -215,9 +206,8 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/buttonSaveBookmark"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Save"
                     android:layout_marginEnd="8dp"
                     app:icon="@drawable/ic_check"
@@ -225,21 +215,20 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/buttonDeleteBookmark"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Delete"
                     android:layout_marginEnd="8dp"
                     android:backgroundTint="@android:color/holo_red_light"
                     app:icon="@android:drawable/ic_menu_delete"
                     android:visibility="gone"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:singleLine="true"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/buttonCancel"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Cancel"
                     android:layout_marginStart="8dp"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"

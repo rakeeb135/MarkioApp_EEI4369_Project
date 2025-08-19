@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1035465181516",
+    "project_id": "markio-599df",
+    "storage_bucket": "markio-599df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035465181516:android:91d600a67c54d4ab3127e9",
+        "android_client_info": {
+          "package_name": "com.eei4369.markio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIYUsuNGvQRCyVCBNMaWuxcNFLwFRvIaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

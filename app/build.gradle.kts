@@ -1,5 +1,8 @@
+// app/build.gradle.kts
+
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.application") // Apply the Android application plugin
+    id("com.google.gms.google-services") // Apply the Google Services plugin
 }
 
 android {
@@ -53,6 +56,11 @@ dependencies {
 
     // For FlexboxLayout (required for dynamic tags on MainActivity)
     implementation("com.google.android.flexbox:flexbox:3.0.0")
+
+    // Firebase dependencies
+    implementation(platform("com.google.firebase:firebase-bom:33.16.0"))
+    implementation("com.google.firebase:firebase-analytics") // You added this, good for analytics
+    implementation("com.google.firebase:firebase-auth")
 
     // Test dependencies
     testImplementation(libs.junit)
